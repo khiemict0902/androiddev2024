@@ -12,5 +12,5 @@ Student Info
 
 * Name: Pham Duc Khiem
 * ID: BA12-095
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Group ID: 7
+* Project Name: WordPress client
