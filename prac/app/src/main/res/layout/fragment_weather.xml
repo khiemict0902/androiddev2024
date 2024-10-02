@@ -21,11 +21,12 @@
         android:text="Hanoi"/>
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="360dp"
+        android:layout_height="240dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/frame"
+        android:paddingBottom="0dp"
         android:src="@drawable/sun"
         app:tint="#003399" />
 </RelativeLayout>
