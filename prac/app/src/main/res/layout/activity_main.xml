@@ -9,50 +9,62 @@
     android:orientation="vertical"
     tools:context=".WeatherActivity">
 
-    <LinearLayout
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/blue">-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/title"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textSize="20sp"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_alignParentStart="true"-->
+    <!--            android:layout_marginStart="16dp"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:text="@string/usth_weather" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/refresh_button"-->
+    <!--            android:layout_width="@dimen/button_width"-->
+    <!--            android:layout_height="@dimen/button_height"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_toStartOf="@+id/setting_button"-->
+    <!--            android:layout_marginEnd="30dp"-->
+    <!--            android:src="@drawable/refresh"-->
+    <!--            android:clickable="true"-->
+    <!--            android:focusable="true"-->
+    <!--            android:background="?attr/selectableItemBackground"-->
+    <!--            app:tint="@color/white" />-->
+
+    <!--        <ImageButton-->
+    <!--            android:id="@+id/setting_button"-->
+    <!--            android:layout_width="@dimen/button_width"-->
+    <!--            android:layout_height="@dimen/button_height"-->
+    <!--            android:layout_centerVertical="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:clickable="true"-->
+    <!--            android:focusable="true"-->
+    <!--            android:background="?attr/selectableItemBackground"-->
+    <!--            android:src="@drawable/settings"/>-->
+    <!--    </RelativeLayout>-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/pink"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="20sp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="16dp"
-            android:textColor="@color/black"
-            android:text="USTH Weather" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="50dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/refresh"
-            app:tint="@color/black" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/settings"/>
-    </LinearLayout>
-
+        android:layout_height="wrap_content"
+        app:title="USTH weather"/>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"/>
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
+        android:layout_height="wrap_content" />
 </LinearLayout>
-
 
